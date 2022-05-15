@@ -5,5 +5,6 @@ public class SnakeandLadderSimulator {
     final static int numberofPlayers = 1;
     public static void main(String[] args) {
         System.out.println("-----Welcome to Snake and Ladder Simulator-----");
+        int diceRoll = (int)(Math.random() * 6) + 1;
     }
 }
