@@ -11,8 +11,10 @@ public class SnakeandLadderSimulator {
         int ladder = 1;
         int snake = 2;
         int playerPos = startngPosition;
+        String diceCountng = String.valueOf(playerPos);
         int diceRoll = (int) (Math.random() * 6) + 1;
-        int optionChoice = (int) (Math.random() * 3);
+        int optionChoice = (int) (Math.random() * 10) % 3;
+        int counterDice = counter++;
         switch (optionChoice) {
             case 0:
                 playerPos = playerPos;
