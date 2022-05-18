@@ -30,9 +30,8 @@ public class SnakeandLadderSimulator {
                 if (playerPos <= startngPosition) {
                     playerPos = startngPosition;
                     System.out.println("The Player need to restart the game");
-                } else if (playerPos >= finalPosition) {
-                    playerPos = finalPosition;
-                } else if (playerPos > finalPosition) {
+                } else if (playerPos == finalPosition){
+                } else if (playerPos < finalPosition) {
                     playerPos = playerPos--;
                 }
                 while (playerPos < finalPosition) {
